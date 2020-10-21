@@ -1,19 +1,12 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     const person1Input = $("input#person1").val();
-    const person2Input = $("input#person2").val();
-    const animalInput = $("input#animal").val();
-    const exclamationInput = $("input#exclamation").val();
-    const verbInput = $("input#verb").val();
-    const nounInput = $("input#noun").val();
+    const whereFrom = $("input#whereFrom").val();
 
-    $(".person1").append(person1Input);
-    $(".person2").append(person2Input);
-    $(".animal").append(animalInput);
-    $(".exclamation").append(exclamationInput);
-    $(".verb").append(verbInput);
-    $(".noun").append(nounInput);
+    $(".person1").text(person1Input);
+    $(".whereFrom").text(whereFrom);
     
+   
     $("#story").show();
 
     event.preventDefault();
